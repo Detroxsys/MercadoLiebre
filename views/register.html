@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bae110c2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/img/logo-mercado-liebre.svg" class="logo"> 
+
+            <form action="#" method="GET">
+                <input type="search" placeholder="Buscar productos, marcas y más">
+            </form>
+
+            <h2 class="copy-header"> 
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito 
+            </h2>
+        </div>
+
+        <a href="#" class="hamburguer-button"> <i class="fas fa-bars"></i> </a>
+        <nav class="main-navbar">
+            <ul>
+                <li> <a href="#"> Ofertas</a></li> 
+                <li> <a href="#"> Tiendas Oficiales</a></li> 
+                <li> <a href="#">Vender</a></li> 
+                <li> <a href="#">Ayuda</a></li> 
+            </ul>
+            <ul>
+                <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i> </a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i> </a></li>
+                <li><a href="#">Mis compras <i class="fas fa-cart-plus"></i> </a></li>
+             </ul>
+        </nav>
+    </header>
+        
+    <img src="/img/img-home-banner.jpg" alt="Banner" class="banner">
+    <main>
+            <!-- La validación es más cómoda con JavaScript-->
+            
+        <form action="" method="POST" class="">
+            <div>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            </div>
+            <div>
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div>
+                <label class="titulares" for="nacimiento">Fecha de Nacimiento</label><br>
+                <input type="date" name="nacimiento" placeholder="mm/dd/yyyy"/><br>
+            </div>
+            <div>
+                <input type="text" name="domicilio" placeholder="Domicilio"/><br>
+            </div>
+            <div>
+                <label class="titulares">Perfil de Usuario</label><br>
+                <input type="radio" id="comprador" name="tipoUsuario"  value="comprador">
+                <label for="comprador">comprador</label> 
+                <input type="radio" id="vendedor" name="tipoUsuario" value="vendedor">
+                <label for="vendedor">vendedor</label><br>
+            </div>
+            <div>
+                <label class="titulares">Intereses</label><br>
+                <input type="checkbox" id="Electro" name="Electro"  value="Electro">
+                <label for="Electro"> Electro </label><br>
+                <input type="checkbox" id="Moda" name="Moda" value="Car">
+                <label for="Moda"> Moda</label><br>
+                <input type="checkbox" id="Hogar" name="Hogar" value="Boat">
+                <label for="Hogar">Hogar</label><br>
+                <input type="checkbox" id="Juguetería" name="Juguetería" value="Boat">
+                <label for="Juguetería">Juguetería</label><br>
+                <input type="checkbox" id="Vida sana" name="Vida sana" value="Boat">
+                <label for="Vida sana"> Vida Sana</label><br>
+            </div>
+            <div>
+                <label class="titulares" for="foto">Foto de Perfil:</label><br>
+                <input type="file"  id="foto" name="foto" accept="image/png, image/jpeg"><br>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="contraseña"/><br>
+                <input type="password" name="passwordrepeat" placeholder="confirmar contraseña"/><br>
+            </div>
+            <button type="reset" class="boton-formulariov2">Borrar</button>
+            <button type="button" onclick = "location='/home'" class="boton-formulariov2" >
+                Enviar </button>
+        </form>
+    </main>
+
+</body>
+</html>
